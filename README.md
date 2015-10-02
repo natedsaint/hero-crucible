@@ -1,5 +1,5 @@
 ## THE HERO'S CRUCIBLE ##
-[![Build status](https://travis-ci.org/natedsaint/hero-crucible.svg?branch=master)](https://travis-ci.org/natedsaint/hero-starter)
+[![Build status](https://travis-ci.org/natedsaint/hero-crucible.svg?branch=master)](https://travis-ci.org/natedsaint/hero-crucible)
 
 Melt your hero down and pour them into the crucible! 
 

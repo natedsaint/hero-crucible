@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "A crucible in which your molten hero is poured: see if they harden or break!",
   "main": "index.js",
-  "repository: "https://github.com/natedsaint/hero-crucible.git",
+  "repository": "https://github.com/natedsaint/hero-crucible.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test-crucible",
+    "crucible": "node index.js",
+    "start": "node index.js",
+    "test-crucible": "mocha -R spec ./test/spec/crucible_spec.js"
   },
   "dependencies": {
     "hero-starter":"https://github.com/JavascriptBattle/hero-starter.git"
   },
   "author": "natedsaint@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^1.21.4"
+  }
 }
