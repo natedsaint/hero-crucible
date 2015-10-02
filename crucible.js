@@ -30,6 +30,7 @@ Crucible.prototype.pour = function(molds) {
   this.helpers = require('./lib/basic_helpers.js');
   this.moves = require('./lib/moves.js');
   this.myHeroMove = require(heroPath + 'hero.js');
+  this.myHeroHelpers = require(heroPath + 'helpers.js');
 
   if (this.type === "full") {
     this.game = this.createGameFromMap(this.getRandomMap());
@@ -58,8 +59,8 @@ Crucible.prototype.solidify = function() {
       if (!this.myHero) {
         this.myHero = hero;
       }
-      direction = this.myHeroMove(this.game, this.helpers);
-      
+      direction = this.myHeroMove(this.game, this.myHeroHelpers);
+
     } else if (typeof this.moves[hero.name] === 'function') {
       direction = this.moves[hero.name](this.game, this.helpers);
     }
