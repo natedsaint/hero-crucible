@@ -11,7 +11,7 @@
     "test-crucible": "mocha -R spec ./test/spec/crucible_spec.js"
   },
   "dependencies": {
-    "hero-starter":"https://github.com/JavascriptBattle/hero-starter.git"
+    "hero-starter":"JavascriptBattle/hero-starter"
   },
   "author": "natedsaint@gmail.com",
   "license": "MIT",
