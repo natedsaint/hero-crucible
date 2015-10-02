@@ -1,0 +1,15 @@
+{
+  "name": "hero-crucible",
+  "version": "1.0.0",
+  "description": "A crucible in which your molten hero is poured: see if they harden or break!",
+  "main": "index.js",
+  "repository: "https://github.com/natedsaint/hero-crucible.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "hero-starter":"https://github.com/JavascriptBattle/hero-starter.git"
+  },
+  "author": "natedsaint@gmail.com",
+  "license": "MIT"
+}
