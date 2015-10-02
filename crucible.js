@@ -58,8 +58,13 @@ Crucible.prototype.solidify = function() {
     if (hero.name === "myHero") {
       if (!this.myHero) {
         this.myHero = hero;
+        this.myHero.undecidedCount = 0;
       }
       direction = this.myHeroMove(this.game, this.myHeroHelpers);
+
+      if (direction === undefined) {
+        this.myHero.undecidedCount++;
+      }
 
     } else if (typeof this.moves[hero.name] === 'function') {
       direction = this.moves[hero.name](this.game, this.helpers);
@@ -102,6 +107,7 @@ Crucible.prototype.reportResult = function() {
   console.log("   *Health given", hero.healthGiven);
   console.log("   *Your diamonds", hero.diamondsEarned);
   console.log("   *Your mines captured", hero.minesCaptured);
+  console.log("   *Times undecided", hero.undecidedCount);
   console.log("    Last turn: ", this.game.maxTurn);
 };
 
