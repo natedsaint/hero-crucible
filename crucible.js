@@ -171,12 +171,12 @@ Crucible.prototype.getRandomMap = function() {
 //Creates a board from the map in the given file path
 Crucible.prototype.createGameFromMap = function(mapFilePath){
   var buffer = fs.readFileSync(mapFilePath);
-  map = buffer.toString('utf8');
+  var map = buffer.toString('utf8');
   map = map.split('\n');
   for (var i = 0; i < map.length; i++){
     map[i] = map[i].split('|');
   }
-  game = new Game(map.length);
+  var game = new Game(map.length);
   for (var j = 0; j < map.length; j++){
     for (var k = 0; k < map.length; k++){
       if (map[j][k] === 'DM'){
